@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #00997a;
+    color: white;
+    padding: 20px 0;
+}
+
+#minhafoto {
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: 0 auto;
+}
+#foto1 {
+    max-width: 500px; 
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.caixa {
+    width: 1040px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.cabeca {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.projeto {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #00997a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+th, td {
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+th {
+    background-color: #00997a;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+tr {
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: #009879;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007e67;
+    text-decoration: underline;
+}
