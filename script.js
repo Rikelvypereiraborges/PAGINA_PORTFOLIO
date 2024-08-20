@@ -1,7 +1,3 @@
-// Exibe uma mensagem de boas-vindas ao carregar a página
-window.onload = function() {
-    alert("Bem-vindo ao site de Rikelvy Borges!");
-};
 // Código para efeito de expansão de imagem ao passar o mouse
 const images = document.querySelectorAll('#foto1, #foto2'); // Seleciona elementos com id 'foto1' e 'foto2'
 
