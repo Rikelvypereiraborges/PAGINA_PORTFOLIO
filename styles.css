@@ -15,6 +15,7 @@ header {
 #minhafoto {
     width: 130px; /*Define a largura e a altura da foto*/
     height: 130px; 
+    display: block; /* transformar a imagem em bloco */
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
 
