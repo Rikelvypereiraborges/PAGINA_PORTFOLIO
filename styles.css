@@ -1,144 +1,126 @@
+/* Definições geral para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-} /* add caracteristica no corpo do site*/
+    font-family: Arial, sans-serif; /*Define a fonte principal como Arial*/
+    background-color: #f4f4f4; /*Define a cor de fundo do corpo*/
+}
 
+/* Estilização do cabeçalho */
 header {
-    background-color: #00997a;
-    color: white;
-    padding: 20px 0;
-} /* add caracteristica no cabeçalho do site*/
+    background-color: #00997a; /* Define a cor de fundo do cabeçalho*/
+    color: white; /*deixar a cor do texto do cabeçalho como branco*/
+    padding: 20px 0; /*coloca um preenchimento em cima e embaixo e 0 nas laterais */
+}
 
+/* Estilizando minhafoto*/
 #minhafoto {
-    width: 130px;
-    height: 130px;
-    display: block;
-    margin: 0 auto;
-} /* Ajustando tamanho dá minha foto*/
+    width: 130px; /*Define a largura e a altura da foto*/
+    height: 130px; 
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/*Estilizando as fotos da página "sobre mim" e "portfolio"*/
 #foto1 {
-    max-width: 500px; 
-    max-height: 450px;
-    object-fit: contain;
-} /* Ajustando as fotos do index e portfolio*/
+    max-width: 500px;  /*Define a largura e a altura máxima da imagem*/
+    max-height: 450px; 
+    object-fit: contain; /*Para a imagem para ficar dentro do container, mantendo a proporção*/
+}
 
+/* Estilo para as fotos da pagina "contato" aqui eu add essa nova id para mudar o tamanho das fotos em especifico sem alterar a restantes*/
 #foto2 {
-    max-width: 10%; 
+    max-width: 10%; /*Define a largura e a altura máxima da imagem em 10%*/
     max-height: 10%;
-    object-fit: contain;
-} /* Ajustando as fotos do contato*/
+    object-fit: contain; /*Para a imagem para ficar dentro do container, mantendo a proporção*/
+}
 
-
+/*Estilização com a classe 'caixa'*/
 .caixa {
-    width: 1040px;
-    margin: 60px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    width: 1040px; /*Define a largura fixa*/
+    margin: 60px auto; /*bota uma margem na parte de cima e embaixo, e centraliza horizontalmente*/
+    padding: 20px; /*bota um preenchimento interno*/
+    background-color: white; /*Deixa a cor de fundo da caixa como branca*/
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /*adiciona uma sombra de leves ao redor da caixa*/
+    border-radius: 15px; /*deixa as bordas arredondadas*/
 }
 
+/* Estilo para o container 'cabeca' */
 .cabeca {
-    width: 960px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 960px; /* Deixa a largura num valor fixo */
+    margin: 0 auto; /* Centraliza horizontalmente o container */
+    display: flex; /* Deixa o layout flexível */
+    justify-content: space-between; /* Distribui o conteúdo igualmente no modo horizontal */
+    align-items: center; /* Sicroniza os itens no centro na vertical */
 }
- 
 
+/* Estilo para as listas dentro da tag 'nav' */
 nav ul {   
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove margens ao redor da lista */
+    padding: 0; /* Remove o preenchimento ao redor da lista */
+    display: flex; /* Exibe os itens da lista em uma linha */
 }
 
+/* Estilo para os itens da lista dentro do 'nav' */
 nav ul li {
-    margin-left: 20px;
+    margin-left: 20px; /* Adiciona uma margem para esquerda */
 }
 
+/* Estilo para os links dentro da lista de navegação */
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    color: white; /* Define a cor do texto do link como branco */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-weight: bold; /* Define o texto dos links em negrito */
 }
 
+/* Efeito hover para os links dentro da lista de navegação */
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adiciona um sublinhado ao texto do link ao passar o mouse */
 }
 
+/* Estilo para os containers de projetos */
 .projeto {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adiciona uma margem inferior */
 }
 
+/* Titulo 2*/
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #00997a;
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Adiciona uma margem inferior */
+    font-size: 28px; /* Deixa a fonte do texto no tamanho 28*/
+    color: #00997a; /* Define a cor do texto como verde*/
 }
 
+/* tabelas */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    overflow: hidden;
-    border-radius: 15px;
+    width: 100%; /* Define a largura*/
+    border-collapse: collapse; /* tira o espaço entre as bordas da tabela */
+    margin: 20px 0; /* Adiciona uma margem emcima e embaixo */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* adiciona uma sombra sutil ao redor da tabela */
+    background-color: white; /* Define a cor de fundo da tabela como branca */
+    overflow: hidden; /* Esconde o conteudo que excede o container */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
 }
 
-th, td {
-    padding: 30px;
-    text-align: center;
-    font-size: 16px;
-    
+/* Estilo para cabeçalho e corpo da tabela */
+th, td {                    
+    padding: 30px; /* Define o preenchimento interno para 30 pixels */
+    text-align: center; /* Centraliza o texto*/
+    font-size: 16px; /* Define o tamanho da fonte para 16 pixels */
 }
 
-th {
-    background-color: #00997a;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+/* Estilo para as células de cabeçalho da tabela */
+th {                                                 
+    background-color: #00997a; /* Define a cor de fundo do cabeçalho como verde */
+    color: white; /* Define a cor do texto do cabeçalho como branco */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+    letter-spacing: 0.1em; /* adiciona espaçamento entre as letras */
 }
 
-tr {
-    transition: background-color 0.3s ease;
+/* Efeito de transição para as linhas da tabela */
+tr {                                                
+    transition: background-color 0.3s ease; /* aplica uma transição suave para a mudança de cor de fundo */
 }
 
-tr:hover {
-    background-color: #f1f1f1;
-}
-
-a {
-    color: #009879;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #007e67;
-    text-decoration: underline;
-}
-.image-container {
-    position: relative;
-    width: 300px; /* Tamanho original da imagem */
-    height: 200px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease; /* Transição suave ao transformar a imagem */
-}
-
-.image-container.expanded {
-    width: 500px; /* Tamanho expandido da imagem */
-    height: 300px;
-}
-
-.image-container.expanded img {
-    transform: scale(1.2); /* Expande a imagem suavemente */
+/* Efeito hover para as linhas na tabela */
+tr:hover {                                           
+    background-color: #f1f1f1; /* muda a cor de fundo das linhas quando passar o mouse */
 }
